@@ -26,7 +26,7 @@ pipeline {
         stage('tomcat') {
             steps {
             sshagent(['tomcat-server']) {
-              sh "scp -o strictHostKeycheking=no target/demo-maven.war tomcat@192.168.109.80:/home/tomcat/opt/tomcat/webapps"
+              sh "scp -o StrictHostKeycheking=no target/demo-maven.war tomcat@192.168.109.80:/home/tomcat/opt/tomcat/webapps"
                     }
           
             }
