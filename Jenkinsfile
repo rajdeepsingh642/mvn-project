@@ -8,7 +8,7 @@ pipeline {
    stages {
         stage('git checkout') {
             steps {
-                git branch: 'master', url:https://github.com/rajdeepsingh642/mvn-project.git 
+                git 'https://github.com/rajdeepsingh642/mvn-project.git'
             }
         }
         stage('compile') {
